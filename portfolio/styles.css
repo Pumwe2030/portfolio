@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #007ACC;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* New CSS for image and text alignment */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.image-text-container img {
+    width: 45%; /* Adjust the width as needed */
+    margin: 0;
+}
+
+.image-text-container .text {
+    width: 50%; /* Adjust the width as needed */
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-text-container img, .image-text-container .text {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+h1, h2 {
+    color: #007ACC;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007ACC;
+    color: white;
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
